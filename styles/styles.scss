@@ -1,0 +1,15 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.share_toast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    background-color: red;
+  }
+}
+
+.profile-data {
+}
