@@ -26,10 +26,78 @@
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <main class="article-preview">
+      <img class="image" src="./images/drawers.jpg" alt="drawer Image">
+
+      <div class="content">
+        <div class="copy">
+          <h6 class="text-preset-1">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h6>
+          <p class="text-preset-2-medium">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <div class="profile">
+          <div class="avatar">
+            <img src="./images/avatar-michelle.jpg" alt="avatar-michelle">
+            <div class="bio">
+              <p class="text-preset-2-bold">Michelle Appleton</p>
+              <span class="text-preset-2-medium"> 28 Jun 2020 </span>
+            </div>
+          </div>
+          <button type="button" id="shareBtn" class="share">
+            <svg
+              class="icon-share"
+              title="icon-share"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="13"
+            >
+              <path
+                fill="#6E8098"
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- tooltip -->
+        <div class="wrapper">
+          <div id="shareToastMobile" class="tooltip display-none">
+            <div class="social-icons">
+              <span class="text-preset-3">SHARE</span>
+              <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="./images/icon-facebook.svg" alt="icon-facebook">
+              </a>
+              <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="./images/icon-twitter.svg" alt="icon-twitter">
+              </a>
+              <a href="https://pinterest.com" target="_blank" rel="noopener">
+                <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+              </a>
+            </div>
+
+            <button type="button" id="closeShareBtn" class="share">
+              <svg
+                class="icon-share"
+                title="icon-share"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+              >
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div id="triangle" class="triangle display-none"></div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
