@@ -1,3 +1,44 @@
+body {
+  background-color: #ecf2f8;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-preset-1 {
+  font-family: "Manrope", serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.015625rem;
+  line-height: 130%;
+}
+
+.text-preset-2-medium {
+  font-family: "Manrope", serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.01875rem;
+  line-height: 140%;
+}
+
+.text-preset-2-bold {
+  font-family: "Manrope", serif;
+  font-size: 0.8125rem;
+  font-weight: 900;
+  letter-spacing: 0.01875rem;
+  line-height: 140%;
+}
+
+.text-preset-3 {
+  font-family: "Manrope", serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.203125rem;
+  line-height: 140%;
+}
+
 .share_toast {
   display: flex;
   flex-direction: column;
@@ -5,6 +46,193 @@
 }
 .share_toast .content {
   background-color: red;
+}
+
+.profile-date {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  height: 2.5rem;
+}
+
+.article-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 1rem;
+  border-radius: 0.625rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.article-preview .image {
+  width: 100%;
+  object-fit: contain;
+}
+.article-preview .content {
+  padding: 2rem;
+  position: relative;
+}
+.article-preview .content .copy h6 {
+  color: #485568;
+}
+.article-preview .content .copy p {
+  color: #6e8098;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+.article-preview .content .profile {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem;
+  align-items: center;
+}
+.article-preview .content .profile .avatar {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.article-preview .content .profile .avatar img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.article-preview .content .profile .avatar .bio p {
+  color: #485568;
+}
+.article-preview .content .profile .avatar .bio span {
+  color: #9daec2;
+}
+.article-preview .content .profile .share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf2f8;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+}
+.article-preview .content .profile .share:hover, .article-preview .content .profile .share:focus {
+  cursor: pointer;
+  background-color: #6e8098;
+}
+.article-preview .content .profile .share:hover .icon-share path, .article-preview .content .profile .share:focus .icon-share path {
+  fill: #ffffff;
+}
+
+.tooltip {
+  background-color: #485568;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.75rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.tooltip .social-icons {
+  display: flex;
+  column-gap: 1rem;
+}
+.tooltip .social-icons span {
+  color: #9daec2;
+}
+.tooltip .share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e8098;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+}
+.tooltip .share .icon-share path {
+  fill: #ffffff;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent; /* Half the width */
+  border-right: 12px solid transparent; /* Half the width */
+  border-top: 12px solid #485568; /* Height of the triangle */
+  position: absolute;
+}
+
+.display-none {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .article-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 37.5rem;
+    overflow: visible;
+  }
+  .article-preview .image {
+    width: 13rem;
+    height: 22rem;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .article-preview .content {
+    padding: 0 3rem 0 2rem;
+  }
+  .article-preview .content .copy p {
+    margin: 2rem 0;
+  }
+  .tooltip {
+    border-radius: 10px;
+    width: 15.5rem;
+    height: 4.1875rem;
+    left: 13.5rem;
+    bottom: 4rem;
+  }
+  .tooltip .share {
+    display: none;
+  }
+  .triangle {
+    right: 48px;
+    bottom: 53px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .article-preview {
+    width: 44rem;
+    column-gap: 2.5rem;
+  }
+  .article-preview .image {
+    width: 17.8125rem;
+  }
+  .article-preview .content {
+    padding: 0;
+    margin-right: 0.5rem;
+  }
+  .article-preview .content .copy p {
+    margin: 2rem 0;
+  }
+  .tooltip {
+    left: 15rem;
+    bottom: 4rem;
+  }
+  .tooltip .share {
+    display: none;
+  }
+  .triangle {
+    bottom: 3.3125rem;
+    right: 0.125rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

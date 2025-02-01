@@ -11,9 +11,7 @@ $white: #ffffff;
 $font-family: "Manrope", serif;
 
 $text-preset-1-font-family: $font-family;
-$text-preset-1-d-font-size: rem(20px);
-$text-preset-1-t-font-size: rem(18px);
-$text-preset-1-m-font-size: rem(16px);
+$text-preset-1-font-size: rem(20px);
 $text-preset-1-bold-font-weight: 900;
 $text-preset-1-line-height: 130%;
 $text-preset-1-letter-spacing: rem(0.25px);
@@ -22,9 +20,9 @@ $text-preset-2-font-family: $font-family;
 $text-preset-2-d-font-size: rem(13px);
 $text-preset-2-t-font-size: rem(13px);
 $text-preset-2-m-font-size: rem(13px);
-$text-preset-2-medium-font-weight: 700;
+$text-preset-2-medium-font-weight: 500;
 $text-preset-2-line-height: 140%;
-$text-preset-2-letter-spacing: 0.12%;
+$text-preset-2-letter-spacing: rem(0.3px);
 
 $text-preset-2-bold-font-weight: 900;
 
@@ -33,7 +31,7 @@ $text-preset-3-d-font-size: rem(13px);
 $text-preset-3-t-font-size: rem(13px);
 $text-preset-3-font-weight: 400;
 $text-preset-3-line-height: 140%;
-$text-preset-3-letter-spacing: 25%;
+$text-preset-3-letter-spacing: rem(3.25px);
 
 // Spacings
 $spacing-2000: rem(160px);
