@@ -27,7 +27,20 @@
   </head>
   <body>
     <main class="article-preview">
-      <img class="image" src="./images/drawers.jpg" alt="drawer Image">
+      <picture>
+        <source
+          srcset="./images/drawer-desktop.png"
+          media="(min-width: 1440px)"
+        >
+        <source srcset="./images/drawers-tablet.png" media="(min-width: 768px)">
+        <img
+          class="image"
+          src="./images/drawers.jpg"
+          alt="drawer Image"
+          loading="eager"
+          decoding="sync"
+        >
+      </picture>
 
       <div class="content">
         <div class="copy">
@@ -49,10 +62,9 @@
               <span class="text-preset-2-medium"> 28 Jun 2020 </span>
             </div>
           </div>
-          <button type="button" id="shareBtn" class="share">
+          <button type="button" id="shareBtn" class="share" title="icon-share">
             <svg
               class="icon-share"
-              title="icon-share"
               xmlns="http://www.w3.org/2000/svg"
               width="15"
               height="13"
@@ -80,10 +92,14 @@
               </a>
             </div>
 
-            <button type="button" id="closeShareBtn" class="share">
+            <button
+              type="button"
+              id="closeShareBtn"
+              class="share"
+              title="icon-share"
+            >
               <svg
                 class="icon-share"
-                title="icon-share"
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
                 height="13"
