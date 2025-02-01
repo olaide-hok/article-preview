@@ -70,8 +70,7 @@ body {
   background-color: $white;
   overflow: hidden;
 
-  .image {
-    width: 100%;
+  picture .image {
     object-fit: contain;
   }
 
@@ -198,6 +197,12 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .article-preview {
     display: flex;
@@ -209,8 +214,6 @@ body {
     overflow: visible;
 
     .image {
-      width: 13rem;
-      height: 22rem;
       object-fit: cover;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -249,10 +252,6 @@ body {
   .article-preview {
     width: 44rem;
     column-gap: $spacing-500;
-
-    .image {
-      width: rem(285px);
-    }
 
     .content {
       padding: 0;

@@ -65,8 +65,7 @@ body {
   background-color: #ffffff;
   overflow: hidden;
 }
-.article-preview .image {
-  width: 100%;
+.article-preview picture .image {
   object-fit: contain;
 }
 .article-preview .content {
@@ -169,6 +168,11 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    height: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .article-preview {
     display: flex;
@@ -180,8 +184,6 @@ body {
     overflow: visible;
   }
   .article-preview .image {
-    width: 13rem;
-    height: 22rem;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -211,9 +213,6 @@ body {
   .article-preview {
     width: 44rem;
     column-gap: 2.5rem;
-  }
-  .article-preview .image {
-    width: 17.8125rem;
   }
   .article-preview .content {
     padding: 0;
